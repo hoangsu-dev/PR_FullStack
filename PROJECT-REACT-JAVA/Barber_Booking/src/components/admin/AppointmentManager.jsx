@@ -132,6 +132,7 @@ const AppointmentManager = () => {
         rowKey="id"
         loading={loading}
         bordered
+        pagination={{ pageSize: 5 }} // ✅ Thêm dòng này để phân trang
       />
     </div>
   );

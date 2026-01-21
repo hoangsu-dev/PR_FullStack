@@ -183,7 +183,7 @@ const ProductManagement = () => {
         columns={columns}
         loading={loading}
         bordered
-        pagination={{ pageSize: 10 }}
+        pagination={{ pageSize: 5 }}
       />
 
       <Modal

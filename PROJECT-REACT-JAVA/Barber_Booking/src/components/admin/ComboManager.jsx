@@ -480,6 +480,7 @@ const ComboManager = () => {
         rowKey="comboId"
         columns={columns}
         loading={loading}
+        pagination={{ pageSize: 5 }}
       />
 
       <Modal

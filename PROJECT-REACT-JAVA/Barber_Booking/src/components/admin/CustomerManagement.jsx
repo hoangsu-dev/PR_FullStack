@@ -84,10 +84,15 @@ const CustomerManagement = () => {
       title: "Email",
       dataIndex: "email",
     },
+    // {
+    //   title: "Ngày tạo",
+    //   dataIndex: "createdAt",
+    //   render: (date) => (date ? new Date(date).toLocaleString() : "--"),
+    // },
     {
       title: "Ngày tạo",
       dataIndex: "createdAt",
-      render: (date) => (date ? new Date(date).toLocaleString() : "--"),
+      key: "createdAt",
     },
     {
       title: "Hành động",
@@ -117,7 +122,7 @@ const CustomerManagement = () => {
         columns={columns}
         loading={loading}
         bordered
-        pagination={{ pageSize: 10 }}
+        pagination={{ pageSize: 5 }}
       />
 
       <Modal

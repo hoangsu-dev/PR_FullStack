@@ -151,6 +151,7 @@ const StaffManagement = () => {
         dataSource={staffs}
         loading={loading}
         bordered
+        pagination={{ pageSize: 5 }} // ✅ Thêm dòng này để phân trang mỗi trang 5 nhân viên
       />
 
       <Modal
